@@ -11,9 +11,18 @@ body{
   
 }
 .cammello{
-    width: 175;
+    width: 300px;
     position: absolute;
     left: 20%;
-    top: 70%  ;
+    top:70%  ;
 }
 
+.w-100{
+    width: 100%;
+}
+.cammello2{
+    width: 300px;
+    position: absolute;
+    left: 60%;
+    top: 70%  ; 
+}
