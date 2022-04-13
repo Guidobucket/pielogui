@@ -11,16 +11,65 @@
 
 
     <div class="character">
-    <img src="character.png" width="100" > 
-</div>
+        <img src="character.png" width="100" > 
+    </div>
 
-<div class="cammello">
-    <img src="cammello.PNG" class="w-100">
-</div>
+    <div class="cammello">
+        <img src="cammello.PNG" class="w-100">
+    </div>
 
-<div class="cammello2">
-    <img src="cammello2.PNG"  class="w-100">
-</div>
+    <!-- <div class="cammello2">
+        <img src="cammello2.PNG"  class="w-100">
+    </div> -->
+
+    <script>
+        // Valorizing variables
+        const charEl = document.querySelector('.character')
+        let jumping = false;
+
+        const camelEl1 = document.querySelector('.cammello')
+        let walking1 = false
+        
+        
+        // detecting key events
+        document.onkeydown = ( e ) => {
+            console.log(e)
+            if (e.code =="Space" && jumping == false){
+                jumping = true
+                charEl.classList.add('jump')
+                setTimeout(() => {
+                    charEl.classList.remove('jump')
+                    jumping = false
+                },1000)
+            }
+        }
+
+        // interval management
+        setInterval(() => {
+           const random1 = Math.random()
+           console.log(random1)
+           if ( random1 < 0.8 && walking1 == false){
+            walking1 = true
+            camelEl1.classList.add('walking')
+            setTimeout(() => {
+                camelEl1.classList.remove('walking')
+                walking1 = false
+            },4000)
+
+           }
+
+        },500)
+
+
+
+        // detect collision
+        //TODO
+
+        // Finish of the level
+        setTimeout(() => {
+            alert("You won")
+        },60 * 1000)
+    </script>
 
 </body>
 </html>
