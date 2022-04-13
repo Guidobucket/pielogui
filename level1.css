@@ -1,6 +1,7 @@
 body{
     background-size: cover;
     /* contain, 100%  */
+    overflow: hidden
 }
 
 .character{
@@ -10,10 +11,36 @@ body{
     top: 73%;
   
 }
+.jump{
+    animation: jumpAnim 1000ms forwards;
+}
+@keyframes jumpAnim{
+    0%,
+    100%{
+        top: 73%;
+    }
+    50%{
+        top: 20%;
+    }
+}
+
+.walking{
+    animation: walkingAnim 4000ms linear forwards;
+}
+@keyframes walkingAnim{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -30%;
+    }
+}
+
+
 .cammello{
     width: 300px;
     position: absolute;
-    left: 20%;
+    left: 100%;
     top:70%  ;
 }
 
