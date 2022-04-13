@@ -3,3 +3,19 @@ body{
 background-size: cover;
 
 }
+
+.character{
+    width: 300;
+    position: absolute;
+    left: 5%;
+    top: 70%;
+  
+}
+
+.door{
+    width: 300;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+
+}
