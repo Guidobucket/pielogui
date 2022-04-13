@@ -3,6 +3,23 @@ body{
 }
 
 
-.h1{
-    font-family: Bungee Shade ;
+h1{
+    font-family: 'Boogaloo', cursive;
+    color: rgb(255, 255, 255);
+}
+
+.principessa{
+    width: 300;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+
+}
+
+.character{
+    
+    position: absolute;
+    left: 5%;
+    top: 73%;
+  
 }
