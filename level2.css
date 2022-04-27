@@ -1,3 +1,17 @@
 body{
 background-size: cover;
 }
+
+.navicella{
+    width: 50px;
+    position: absolute;
+    top: 40%;
+}
+
+
+.alieni{
+    width: 50px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
