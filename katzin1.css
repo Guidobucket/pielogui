@@ -3,9 +3,11 @@ body{
 }
 
 
-h1{
+p{
     font-family: 'Boogaloo', cursive;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 211, 65, 0.877);
+    background-color:rgba(189, 51, 51, 0.562);
+    font-size: 200%;
 }
 
 .principessa{
@@ -22,4 +24,10 @@ h1{
     left: 5%;
     top: 73%;
   
+}
+
+h3{
+    font-family: 'Permanent Marker', cursive;
+
+
 }
