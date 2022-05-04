@@ -1,0 +1,33 @@
+body{
+    background-size: cover;
+}
+
+
+p{
+    font-family: 'Boogaloo', cursive;
+    color: rgba(27, 233, 154, 0.877);
+    background-color:rgba(17, 0, 255, 0.61);
+    font-size: 200%;
+}
+
+.principessa{
+    width: 300;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+
+}
+
+.character{
+    
+    position: absolute;
+    left: 5%;
+    top: 73%;
+  
+}
+
+h3{
+    font-family: 'Permanent Marker', cursive;
+
+
+}
