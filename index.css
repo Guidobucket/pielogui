@@ -1,5 +1,4 @@
 body{
-  
 background-size: cover;
 
 }
@@ -8,8 +7,22 @@ background-size: cover;
     position: absolute;
     left: 5%;
     top: 70%;
+   
 }
 
+
+.character-container{
+  width: 100px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  animation: characterMove 4s  infinite;
+}
+
+.character-container img{
+  width: 100%;
+  height: 90%;
+}
 
 
 .door{
