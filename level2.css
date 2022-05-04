@@ -3,7 +3,7 @@ background-size: cover;
 }
 
 .navicella{
-    width: 50px;
+    width: 50%;
     position: absolute;
     top: 40%;
 }
@@ -12,6 +12,13 @@ background-size: cover;
 .alieni{
     width: 50px;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 20%;
+}
+
+.alieni2{
+    width: 50px;
+    position: absolute;
+    top: 35%;
+    left: 60%;
 }

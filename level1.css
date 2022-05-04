@@ -12,7 +12,7 @@ body{
   
 }
 .jump{
-    animation: jumpAnim 1000ms forwards;
+    animation: jumpAnim 2200ms forwards;
 }
 @keyframes jumpAnim{
     0%,
@@ -25,7 +25,7 @@ body{
 }
 
 .walking{
-    animation: walkingAnim 4000ms linear forwards;
+    animation: walkingAnim 2000ms linear forwards;
 }
 @keyframes walkingAnim{
     0%{
@@ -47,12 +47,7 @@ body{
 .w-100{
     width: 100%;
 }
-.cammello2{
-    width: 300px;
-    position: absolute;
-    left: 60%;
-    top: 70%  ; 
-}
+
 
 .liv1{
 
