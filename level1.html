@@ -11,7 +11,10 @@
 </head>
 
 <body background="Deserto.jpg">
-    <div class="liv1"><img src="liv 1.png.crdownload" alt=""></div>
+    <div class="deserto">
+        <marquee behavior="" direction="right"> <img src="Deserto.jpg" alt=""></marquee>
+    </div>
+    <div class="liv1">   <img src="liv 1.png.crdownload" alt=""></div>
 
     <div class="character">
         <img src="character.png" width="100">
@@ -43,7 +46,7 @@
                 setTimeout(() => {
                     charEl.classList.remove('jump')
                     jumping = false
-                }, 1000)
+                }, 2200)
             }
         }
 
@@ -72,6 +75,7 @@
             console.log("checking")
             if (isCollide(camelEl1, charEl)) {
                 alert("you die")
+                location.reload()
             }
         }, 50)
 
