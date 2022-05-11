@@ -12,13 +12,41 @@ background-size: cover;
 .alieni{
     width: 50px;
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 20%;
 }
 
 .alieni2{
     width: 50px;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 60%;
 }
+
+
+.up{
+    animation: upAnim 2200ms forwards;
+}
+@keyframes upAnim{
+    0%,
+    100%{
+        top: 73%;
+    }
+    50%{
+        top: 20%;
+    }
+}
+
+.down{
+    animation: downAnim 2000ms linear forwards;
+}
+@keyframes downAnim{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -30%;
+    }
+}
+
+
