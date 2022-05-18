@@ -1,5 +1,11 @@
 body{
-   
    background-size: cover;
+}
+
+.PinguinoCarino{
+   width: 100px;
    position: absolute;
+   left: 58%;
+   top: 45%  ;
+
 }
