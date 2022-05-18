@@ -19,34 +19,83 @@ background-size: cover;
 .alieni2{
     width: 50px;
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 60%;
 }
 
 
 .up{
-    animation: upAnim 2200ms forwards;
+    animation: upAnim 3000ms forwards;
 }
 @keyframes upAnim{
-    0%,
-    100%{
-        top: 73%;
+    5%{
+        top: 10%;
     }
-    50%{
-        top: 20%;
+    100%{
+        top: 40%;
     }
 }
 
 .down{
-    animation: downAnim 2000ms linear forwards;
+    animation: downAnim 3000ms forwards;
 }
 @keyframes downAnim{
+    5%{
+        top: 75%;
+    }
+    100%{
+        top: 40%;
+    }
+}
+
+
+
+.alieni{
+    animation: alieniAnim 4000ms forwards;
+}
+
+@keyframes alieniAnim{
+    100%{
+        left: -10%;
+    }
+}
+
+
+.alieni2{
+    animation: alieni2Anim 4000ms forwards;
+}
+
+@keyframes alieni2Anim{
     0%{
+        top: 40%;
         left: 100%;
     }
+
+    25%{
+        
+    }
+
     100%{
         left: -30%;
     }
 }
 
 
+
+/* 
+@keyframes alieniAnim{
+    0%{
+      
+        top: 50%;
+        left: 100%;  
+    }
+    25%{
+        top: 30%;
+        transform: rotate(-35deg);
+    }
+    40%{
+        left: 50%;
+        top: 70%;
+        transform: rotate(35deg);
+    }
+} */

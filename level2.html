@@ -35,18 +35,17 @@
 
     // detecting key events
     document.onkeydown = (e) => {
-        console.log(e)
+        console.log(e.code, up)
         if (e.code == "ArrowUp" && up == false) {
             up = true
+            console.log("???")
             charEl.classList.add('up')
             setTimeout(() => {
                 charEl.classList.remove('up')
                 up = false
-            }, 1000)
+            }, 3000)
         }
-    }
 
-    document.onkeydown = (e) => {
         console.log(e)
         if (e.code == "ArrowDown" && down == false) {
             down  = true
@@ -54,7 +53,7 @@
             setTimeout(() => {
                 charEl.classList.remove('down')
                 down = false
-            }, 1000)
+            }, 3000)
         }
     }
 
