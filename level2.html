@@ -27,6 +27,7 @@
     const charEl = document.querySelector('.navicella')
     let jumping = false;
 
+
     
 
     let down = false
@@ -57,12 +58,59 @@
         }
     }
 
+    // enemy movemnt 1
+    let moving1 = false
+    const naviEl1 = document.querySelector('.alieni')
+
+    // interval management
+    setInterval(() => {
+        const random1 = Math.random()
+        console.log(random1)
+        if (random1 < 0.8 && moving1 == false) {
+            moving1 = true
+            naviEl1.classList.add('alieni-walking-1')
+            setTimeout(() => {
+                naviEl1.classList.remove('alieni-walking-1')
+                moving1 = false
+            }, 4000)
+
+        }
+
+    }, 500)
+
+
+// enemy movemnt 2
+    let moving2 = false
+    const naviEl2 = document.querySelector('.alieni2')
+
+    // interval management
+    setInterval(() => {
+        const random1 = Math.random()
+        console.log(random1)
+        if (random1 < 0.8 && moving2 == false) {
+            moving2 = true
+            naviEl2.classList.add('alieni-walking-2')
+            setTimeout(() => {
+                naviEl2.classList.remove('alieni-walking-2')
+                moving2 = false
+            }, 4000)
+
+        }
+
+    }, 500)
+
+
+
+  // detect collision
+        //TODO
+       
+
     
     // Finish of the level
 
     setTimeout(() => {   
         alert("You won")
-        location.href="katzin2.html"
+        location.href="katzin3.html"
     }, 60 * 1000)
 
 

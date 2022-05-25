@@ -12,15 +12,15 @@ background-size: cover;
 .alieni{
     width: 50px;
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 45%;
+    left: 100%;
 }
 
 .alieni2{
     width: 50px;
     position: absolute;
-    top: 10%;
-    left: 60%;
+    top: 35%;
+    left: 100%;
 }
 
 
@@ -50,33 +50,37 @@ background-size: cover;
 
 
 
-.alieni{
+.alieni-walking-1{
     animation: alieniAnim 4000ms forwards;
 }
 
 @keyframes alieniAnim{
+    0%{
+left: 100%;
+top: 30%;
+    }
+    
+    
     100%{
-        left: -10%;
+top: 50%;
+        left: -30%;
     }
 }
 
 
-.alieni2{
-    animation: alieni2Anim 4000ms forwards;
+.alieni-walking-2{
+    animation: alieni2Anim 6000ms forwards;
 }
 
 @keyframes alieni2Anim{
     0%{
-        top: 40%;
+        top: 30%;
         left: 100%;
-    }
-
-    25%{
-        
     }
 
     100%{
         left: -30%;
+       
     }
 }
 
