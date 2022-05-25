@@ -1,11 +1,68 @@
 body{
    background-size: cover;
+   /* contain, 100%  */
+   overflow: hidden
 }
+
+.character{
+   width: 200;
+   position: absolute;
+   left: 5%;
+   top: 77%;
+ 
+}
+.jump{
+   animation: jumpAnim 2200ms forwards;
+}
+@keyframes jumpAnim{
+   0%,
+   100%{
+       top: 73%;
+   }
+   50%{
+       top: 20%;
+   }
+}
+
+.altripinguini{
+   width: 300px;
+   position: absolute;
+   left: 100%;
+   top:77%  ;
+}
+
+.walking{
+   animation: walkingAnim 2000ms linear forwards;
+}
+@keyframes walkingAnim{
+   0%{
+       left: 100%;
+   }
+   100%{
+       left: -30%;
+   }
+}
+
 
 .PinguinoCarino{
-   width: 100px;
+   width: 300px;
    position: absolute;
-   left: 58%;
-   top: 45%  ;
+   left: 100%;
+   top:77%  ;
+}
+
+.w-100{
+   width: 20%;
+}
+
+
+.liv3{
+
+   width: 300px;
+   left: 60%;
+   top: 90%;
+
 
 }
+
+
