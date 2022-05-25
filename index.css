@@ -15,7 +15,7 @@ background-size: cover;
   width: 100px;
   position: absolute;
   left: 10%;
-  top: 30%;
+  top: 60%;
   animation: characterMove 4s  infinite;
 }
 

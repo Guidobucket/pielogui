@@ -10,12 +10,118 @@
 </body>
 
 <div class="PinguinoCarino">
-    <img src="polpettina.png" alt="">
+    <img src="polpettina.png" width="200">
 </div>
 
 <div class="character">
-    <img src="character.png" alt="">
+    <img src="character.png" class="w-100">
 </div>
+
+<div class="altripinguini">
+    <img src="AmiciPinguini.png" width="200">
+</div>
+
+
+
+
+<script>
+    // Valorizing variables
+    const charEl = document.querySelector('.character')
+    let jumping = false;
+
+    const pengEl1 = document.querySelector('.PinguinoCarino')
+    let walking1 = false
+
+    const altrEl1 = document.querySelector(".altripinguini")
+    let walking2 = false
+
+    // detecting key events
+    document.onkeydown = (e) => {
+        console.log(e)
+        if (e.code == "Space" && jumping == false) {
+            jumping = true
+            charEl.classList.add('jump')
+            setTimeout(() => {
+                charEl.classList.remove('jump')
+                jumping = false
+            }, 2200)
+        }
+    }
+    
+
+
+
+    // interval management
+    setInterval(() => {
+        const random1 = Math.random()
+        console.log(random1)
+        if (random1 < 0.8 && walking1 == false) {
+            walking1 = true
+            pengEl1.classList.add('walking')
+            setTimeout(() => {
+                pengEl1.classList.remove('walking')
+                walking1 = false
+            }, 4000)
+
+        }
+
+    }, 500)
+
+
+
+    setInterval(() => {
+        const random1 = Math.random()
+        console.log(random1)
+        if (random1 < 0.8 && walking1 == false) {
+            walking1 = true
+            altrEl1.classList.add('walking')
+            setTimeout(() => {
+                altrEl1.classList.remove('walking')
+                walking1 = false
+            }, 4000)
+
+        }
+
+    }, 500)
+
+
+
+
+
+    // detect collision
+    //TODO
+    setInterval(() => {
+        // check if pengEl1 & altrEl1 are in the same position of charEl
+        console.log("checking")
+        if (isCollide(pengEl1 & altrEl1, charEl)) {
+            alert("nabbo")
+            location.reload()
+        }
+    }, 50)
+    
+    
+
+
+    // Finish of the level
+
+    setTimeout(() => {   
+        alert("You won")
+        location.href="katzin4.html"
+    }, 60 * 1000)
+
+
+    function isCollide(a, b) {
+        var aRect = a.getBoundingClientRect();
+        var bRect = b.getBoundingClientRect();
+
+        return !(
+            ((aRect.top + aRect.height) < (bRect.top)) ||
+            (aRect.top > (bRect.top + bRect.height)) ||
+            ((aRect.left + aRect.width) < bRect.left) ||
+            (aRect.left > (bRect.left + bRect.width))
+        );
+    }
+</script>
 
 
 
