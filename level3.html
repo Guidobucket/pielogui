@@ -61,7 +61,7 @@
             setTimeout(() => {
                 pengEl1.classList.remove('walking')
                 walking1 = false
-            }, 4000)
+            }, 3000)
 
         }
 
@@ -78,11 +78,11 @@
             setTimeout(() => {
                 altrEl1.classList.remove('walking')
                 walking1 = false
-            }, 4000)
+            }, 2000)
 
         }
 
-    }, 500)
+    }, 200)
 
 
 
@@ -91,13 +91,24 @@
     // detect collision
     //TODO
     setInterval(() => {
-        // check if pengEl1 & altrEl1 are in the same position of charEl
+        // check if pengEl1 are in the same position of charEl
         console.log("checking")
-        if (isCollide(pengEl1 & altrEl1, charEl)) {
+        if (isCollide(pengEl1, charEl)) {
             alert("nabbo")
             location.reload()
         }
-    }, 50)
+    }, 1000)
+    
+    // detect collision
+    //TODO
+    setInterval(() => {
+        // check if altrEl1 are in the same position of charEl
+        console.log("checking")
+        if (isCollide(altrEl1, charEl)) {
+            alert("nabbo")
+            location.reload()
+        }
+    }, 790)
     
     
 
