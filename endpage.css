@@ -1,4 +1,13 @@
 body{
-    position: absolute;
-    overflow: hidden;
+
+    background-size: cover;
 }
+
+.ending{
+    
+    width: 300;
+    position: absolute;
+    left: 5%;
+    top: 70%;
+
+  
