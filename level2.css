@@ -24,8 +24,23 @@ background-size: cover;
 }
 
 
+.alieni3{
+    width: 50px;
+    position: absolute;
+    top: 45%;
+    left: 100%;
+}
+
+.alieni4{
+    width: 50px;
+    position: absolute;
+    top: 35%;
+    left: 100%;
+}
+
+
 .up{
-    animation: upAnim 3000ms forwards;
+    animation: upAnim 7000ms forwards;
 }
 @keyframes upAnim{
     5%{
@@ -37,7 +52,7 @@ background-size: cover;
 }
 
 .down{
-    animation: downAnim 3000ms forwards;
+    animation: downAnim 7000ms forwards;
 }
 @keyframes downAnim{
     5%{
@@ -86,6 +101,41 @@ top: 50%;
 
 
 
+.alieni-walking-3{
+    animation: alieni3Anim 7500ms forwards;
+}
+
+@keyframes alieni3Anim{
+    0%{
+left: 100%;
+top: 60%;
+    }
+    
+    
+    100%{
+top: 10%;
+        left: -30%;
+    }
+}
+
+
+
+.alieni-walking-4{
+    animation: alieni4Anim 7500ms forwards;
+}
+
+@keyframes alieni4Anim{
+    0%{
+left: 100%;
+top: 20%;
+    }
+    
+    
+    100%{
+top: 60%;
+        left: -30%;
+    }
+}
 /* 
 @keyframes alieniAnim{
     0%{
