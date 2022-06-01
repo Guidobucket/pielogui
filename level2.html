@@ -21,6 +21,14 @@
     <img src="alieni2.png" >
 </div>
 
+<div class="alieni3">
+    <img src="alieni3.png" >
+</div>
+
+<div class="alieni4">
+    <img src="alieni4.png" >
+</div>
+
 
 <script>
     // Valorizing variables
@@ -101,6 +109,48 @@
 
 
 
+
+// enemy movemnt 1
+let moving3 = false
+    const naviEl3 = document.querySelector('.alieni3')
+
+    // interval management
+    setInterval(() => {
+        const random1 = Math.random()
+        console.log(random1)
+        if (random1 < 0.8 && moving3 == false) {
+            moving3 = true
+            naviEl3.classList.add('alieni-walking-3')
+            setTimeout(() => {
+                naviEl3.classList.remove('alieni-walking-3')
+                moving3 = false
+            }, 7500)
+
+        }
+
+    }, 500)
+
+
+
+// enemy movemnt 1
+let moving4 = false
+    const naviEl4 = document.querySelector('.alieni4')
+
+    // interval management
+    setInterval(() => {
+        const random1 = Math.random()
+        console.log(random1)
+        if (random1 < 0.8 && moving4 == false) {
+            moving4 = true
+            naviEl4.classList.add('alieni-walking-4')
+            setTimeout(() => {
+                naviEl4.classList.remove('alieni-walking-4')
+                moving4 = false
+            }, 7500)
+
+        }
+
+    }, 500)
   // detect collision
         //TODO
        
@@ -110,7 +160,7 @@
 
     setTimeout(() => {   
         alert("You won")
-        location.href="katzin3.html"
+        location.href="endpage.html"
     }, 60 * 1000)
 
 
